@@ -1,0 +1,7 @@
+echo "UseDNS no" >> /etc/ssh/sshd_config
+systemctl restart sshd.service
+locale-gen "en_US.UTF-8"
+apt-get update
+apt-get upgrade
+apt-get install tmux git rsync bash-completion aptitude language-pack-ru -y
+shutdown -r now
